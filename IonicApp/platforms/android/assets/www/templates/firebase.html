@@ -1,0 +1,42 @@
+<ion-view>
+    <div class="bar bar-header bar-light">
+        <h1 class="title"><img class="title-image" src="http://www.nearform.com/wp-content/themes/baseek-child/images/nf-logo-with-tag.png" width="123" height="43" /></h1>
+    </div>
+    <ion-content>
+
+        <div class="card">
+            <div class="item item-divider">
+                <div>
+                    <!--create list items for our form-->
+                    <div class="list list-inset">
+                        <label class="item item-input">
+                            <input ng-model="username" type="text" placeholder="Username"/>
+                        </label>
+                    </div>
+
+
+                    <div class="item item-divider">
+                        <label class="item item-input">
+                            <input ng-model="password" type="password" placeholder="Password"/>
+                        </label>
+                    </div>
+
+
+                    <div class="padding-left padding-right">
+                        <!--create buttons- for login and register-->
+                          <div class="button-bar">
+                              <a class="button button-royal" ng-click="login(username, password)">Login</a>
+                              <a class="button button-calm" ng-click="register(username, password)">Register</a>
+                          </div>
+                     </div>
+                  </div>
+
+              </div>
+          </div>
+      </ion-content>
+
+
+      <div class="bar bar-footer bar-balanced">
+          <div class="title"><h6>Near Form 2015 ®</h6></div>
+      </div>
+  </ion-view>
